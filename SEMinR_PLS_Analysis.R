@@ -1,7 +1,7 @@
 library(seminr)
 
 # import data
-all_indicators <- read.csv("../Data/all_indicators.csv", header = TRUE)
+all_indicators <- read.csv("../data/all_indicators.csv", header = TRUE)
 
 # remove variables that will not be used for this analysis
 all_indicators = subset(all_indicators, select=-c(english_level,language,progress,duration,age))
@@ -12,7 +12,6 @@ all_indicators = all_indicators[ , order(names(all_indicators))]
 
 
 # build measurement part of model
-# composite construct = formative construct
 measurements <- constructs(
   composite("CRD", multi_items("rd", 1:2), weights = mode_B),
   composite("TA", multi_items("ta", 1:4), weights = mode_B),
@@ -45,7 +44,7 @@ model_summary <- summary(pls_model)
 plot(pls_model, title="Extended PMT")
 
 # generate bootstrapped model for significance
-boot_estimates <- bootstrap_model(pls_model, nboot = 5000, cores = 7)
+boot_estimates <- bootstrap_model(pls_model, nboot = 5000, cores = 8)
 bootstrapped_model_summary <- summary(boot_estimates)
 
 # plot bootstrapped model

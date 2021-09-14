@@ -4,9 +4,7 @@ library(seminr)
 all_indicators <- read.csv("../data/all_indicators.csv", header = TRUE)
 
 # remove variables that will not be used for this analysis
-all_indicators = subset(all_indicators, select=-c(english_level,language,progress,duration,age))
-# take reading_level as logical/boolean
-all_indicators$crx6 <- as.integer(as.logical(all_indicators$crx6))
+all_indicators = subset(all_indicators, select=-c(english_level,language,progress,duration,age,rfs1,rfs2,rfs3,rfs4,rs1,rs2))
 # order columns alphabetically
 all_indicators = all_indicators[ , order(names(all_indicators))]
 
@@ -16,7 +14,7 @@ measurements <- constructs(
   composite("CRD", multi_items("rd", 1:2), weights = mode_B),
   composite("TA", multi_items("ta", 1:4), weights = mode_B),
   composite("CR", multi_items("cr", 1:8), weights = mode_B),
-  composite("CA", multi_items("crx", 1:4), weights = mode_B),
+  composite("CA", multi_items("ca", 1:4), weights = mode_B),
   composite("PS", multi_items("ps", 1:4), weights = mode_B),
   composite("PV", multi_items("pv", 1:4), weights = mode_B),
   composite("SE", multi_items("se", 1:8), weights = mode_B),
@@ -39,7 +37,7 @@ structure <- relationships(
 pls_model <- estimate_pls(data = all_indicators,
                           measurement_model = measurements,
                           structural_model = structure)
-
+# model_summary contains most statistical data about the model
 model_summary <- summary(pls_model)
 plot(pls_model, title="Extended PMT")
 

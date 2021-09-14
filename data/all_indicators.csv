@@ -1,4 +1,4 @@
-progress,duration,age,english_level,language,rs2,rs1,rd1,rd2,ta1,ta2,ta3,ta4,ps1,ps2,ps3,ps4,pv1,pv2,pv3,pv4,se2,rc4,si4,cr7,ca3,re1,sn1,cr8,se1,si2,se7,rc3,se4,rc2,ca1,rc1,cr1,cr6,se3,si3,sn3,se5,ca2,si1,re4,cr5,re3,se8,ca4,re2,cr2,sn2,se6,sn4,cr4,cr3,rfs4,rfs3,rfs2,rfs1
+progress,duration,age,english_level,language,rs2,rs1,crd1,crd2,ta1,ta2,ta3,ta4,ps1,ps2,ps3,ps4,pv1,pv2,pv3,pv4,se2,rc4,si4,cr7,ca3,re1,sn1,cr8,se1,si2,se7,rc3,se4,rc2,ca1,rc1,cr1,cr6,se3,si3,sn3,se5,ca2,si1,re4,cr5,re3,se8,ca4,re2,cr2,sn2,se6,sn4,cr4,cr3,rfs4,rfs3,rfs2,rfs1
 100,890,2,2nd,dutch,True,6,6,5,7,7,7,5,7,7,6,6,5,2,6,5,3,5,6,6,7,5,6,6,5,6,6,2,5,2,4,5,5,6,6,6,6,6,7,6,5,6,5,4,5,4,3,6,6,6,5,6,61.6,27.7,66.4,61.2
 100,401,2,2nd,dutch,True,7,6,6,7,7,7,7,6,3,5,6,2,1,1,3,5,3,7,7,7,6,6,7,6,6,6,3,5,3,7,3,7,7,6,5,6,6,7,6,6,7,5,5,7,5,7,7,5,4,7,7,61.6,61.3,47.0,29.9
 100,367,2,2nd,dutch,True,7,5,5,7,7,7,7,5,6,4,6,3,2,3,5,6,6,3,7,6,5,3,7,7,7,6,6,7,4,7,5,6,7,7,3,3,5,6,3,5,7,7,6,7,6,6,5,5,3,6,7,61.6,61.3,66.4,29.9

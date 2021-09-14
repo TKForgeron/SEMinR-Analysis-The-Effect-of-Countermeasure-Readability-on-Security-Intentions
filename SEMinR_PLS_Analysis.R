@@ -11,7 +11,7 @@ all_indicators = all_indicators[ , order(names(all_indicators))]
 
 # build measurement part of model
 measurements <- constructs(
-  composite("CRD", multi_items("rd", 1:2), weights = mode_B),
+  composite("CRD", multi_items("crd", 1:2), weights = mode_B),
   composite("TA", multi_items("ta", 1:4), weights = mode_B),
   composite("CR", multi_items("cr", 1:8), weights = mode_B),
   composite("CA", multi_items("ca", 1:4), weights = mode_B),

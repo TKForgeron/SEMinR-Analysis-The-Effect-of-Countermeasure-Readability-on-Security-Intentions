@@ -5,17 +5,22 @@ Smit, T.; van Haastrecht, M.; Spruit, M. The Effect of Countermeasure Readabilit
 
 
 
-Author:
-T.K. Smit
+### Author
 
-File/Folder Structure:
--SEMinR_PLS_Analysis.R
--data
-  -all_indicators.csv
+T. Smit
 
-Usage:
+### File/Folder Structure
+    .
+    ├── data					          
+    |   └── all_indicators.csv	
+    ├── SEMinR_PLS_Analysis.R
+    └── README.md
+
+### Usage
+
 all_indicators.csv contains all recorded indicators. Except for "progress", "duration", "age", "english_level", and "language" every column contains an integer ranging from 1 to 7 corresponding to Likert-scale responses.
 See Appedix A in the main research paper for the meaning behind all indicator names, i.e. questionnaire items.
 
-License:
-© 2021 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+### License
+
+© 2021 by the authors of the paper. The article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/). This repository may be handled likewise (CC BY).

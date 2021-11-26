@@ -1,7 +1,7 @@
 # SEMinR-Analysis-The-Effect-of-Countermeasure-Readability-on-Security-Intentions
 This is the code and data used for the analysis of the following research paper:
 
-Smit, T.; van Haastrecht, M.; Spruit, M. The Effect of Countermeasure Readability on Security Intentions. _J. Cybersecur. Priv_. 2021, 1, 675-703. https://doi.org/10.3390/jcp1040034
+Smit, T.; van Haastrecht, M.; Spruit, M. The Effect of Countermeasure Readability on Security Intentions. _J. Cybersecur. Priv_. **2021**, _1_, 675-703. https://doi.org/10.3390/jcp1040034
 
 
 
